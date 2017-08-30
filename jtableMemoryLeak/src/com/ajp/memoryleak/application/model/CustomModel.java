@@ -32,7 +32,7 @@ public class CustomModel extends AbstractTableModel{
 	public void removeOneHundredRecords() {
 		int curentRowSize = someDataList.size() - counter;
 		
-		if (curentRowSize >= 0) {			
+		if (curentRowSize >= 0) {
 			for (int i = someDataList.size(); i > curentRowSize; --i) {
 				someDataList.remove(i - 1);
 				fireTableRowsDeleted(i, i);
